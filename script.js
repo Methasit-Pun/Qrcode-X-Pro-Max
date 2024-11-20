@@ -1,33 +1,41 @@
-// Selectors
 const form = document.getElementById('qr-form');
 const qrOutput = document.getElementById('qr-output');
 
-// Function to create QR codes
-const generateQRCodes = (links) => {
+const generateQRCodes = async (links) => {
+    const response = await fetch('http://localhost:3000/generate', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ links }),
+    });
+
+    const result = await response.json();
+    if (result.success) {
+        displayQRCodes(result.qrCodes);
+    } else {
+        alert('QR Code generation failed. Please try again.');
+    }
+};
+
+const displayQRCodes = (qrCodes) => {
     qrOutput.innerHTML = ''; // Clear previous results
 
-    links.forEach((link, index) => {
-        if (link.trim() === '') return; // Skip empty lines
-
-        const qrCodeDiv = document.createElement('div');
-        const qrCanvas = document.createElement('canvas');
+    qrCodes.forEach((qr) => {
+        const qrDiv = document.createElement('div');
+        const qrImage = document.createElement('img');
         const qrText = document.createElement('p');
-        qrText.textContent = `QR ${index + 1}`;
 
-        // Generate QR code
-        const qr = new QRious({
-            element: qrCanvas,
-            value: link.trim(),
-            size: 150,
-        });
+        qrImage.src = qr.url;
+        qrImage.alt = 'QR Code';
+        qrText.textContent = qr.link;
 
-        qrCodeDiv.appendChild(qrCanvas);
-        qrCodeDiv.appendChild(qrText);
-        qrOutput.appendChild(qrCodeDiv);
+        qrDiv.appendChild(qrImage);
+        qrDiv.appendChild(qrText);
+        qrOutput.appendChild(qrDiv);
     });
 };
 
-// Event Listener
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
