@@ -1,4 +1,7 @@
 # **Qrcode X Pro Max**  
+
+![image](https://github.com/user-attachments/assets/32ad1425-afda-43de-947d-4266414ac56c)
+
 ![Qrcode X Pro Max](https://github.com/user-attachments/assets/f05d3ede-7d0b-4c54-9005-0d1f188554d4)  
 
 ### **Effortless. Beautiful. Fast.**  
