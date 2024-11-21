@@ -2,8 +2,6 @@
 
 ![image](https://github.com/user-attachments/assets/32ad1425-afda-43de-947d-4266414ac56c)
 
-![Qrcode X Pro Max](https://github.com/user-attachments/assets/f05d3ede-7d0b-4c54-9005-0d1f188554d4)  
-
 ### **Effortless. Beautiful. Fast.**  
 
 **Qrcode X Pro Max** redefines QR code generation with simplicity and style. Designed for entrepreneurs, developers, and tech enthusiasts, it’s the perfect blend of performance and elegance.  
@@ -26,7 +24,8 @@
 2. **Generate QR Codes**: Click “Generate” and watch the magic.  
 3. **Download & Share**: Save your high-resolution QR codes in seconds.  
 
----
+![Qrcode X Pro Max](https://github.com/user-attachments/assets/f05d3ede-7d0b-4c54-9005-0d1f188554d4)  
+
 
 ## **Getting Started**  
 
