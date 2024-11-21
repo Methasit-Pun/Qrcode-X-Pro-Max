@@ -1,0 +1,23 @@
+{
+    "name": "qrcode-x-pro-max",
+    "version": "1.0.0",
+    "description": "An elegant QR Code generator with frontend and backend integration.",
+    "main": "index.js",
+    "scripts": {
+      "start": "concurrently \"npm run start-frontend\" \"npm run start-backend\"",
+      "start-frontend": "live-server frontend --open",
+      "start-backend": "cd qr-api && npm start",
+      "install-all": "npm install && cd qr-api && npm install"
+    },
+    "dependencies": {
+      "concurrently": "^7.6.0",
+      "live-server": "^1.2.2"
+    },
+    "devDependencies": {},
+    "engines": {
+      "node": ">=14.0.0"
+    },
+    "author": "Your Name",
+    "license": "ISC"
+  }
+  

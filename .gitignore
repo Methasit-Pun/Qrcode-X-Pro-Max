@@ -1,0 +1,58 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Dependency directories
+frontend/node_modules/
+qr-api/node_modules/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Build outputs
+dist/
+build/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+tmp/
+temp/
+
+# Coverage
+coverage/
+
+# Production builds
+/frontend/dist/
+qr-api/*.js.map
+
+# Ignore any compiled or bundled files
+*.bundle.js
+*.min.js
+*.min.css
+
+# Ignore local server files
+frontend/live-server.log
+
+# Ignore root files
+package-lock.json
+
