@@ -28,7 +28,7 @@ body {
 }
 
 .logo {
-    width: 150px;
+    width: 40px;
 }
 
 .nav-links a {
@@ -111,4 +111,38 @@ footer {
     text-align: center;
     color: #666;
     font-size: 14px;
+}
+
+/* Layout container for the QR codes */
+#qr-output {
+    display: flex;
+    flex-wrap: wrap; /* Allows the QR codes to wrap if there's not enough space */
+    gap: 20px; /* Adds spacing between QR codes */
+    justify-content: center; /* Center align the QR codes */
+    padding: 20px;
+}
+
+/* Styling for individual QR code containers */
+.qr-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px; /* Fixed size for the container */
+    text-align: center;
+    margin: 10px;
+}
+
+/* Resizing the QR code images */
+.qr-container img {
+    width: 100px; /* Adjust the QR code image size */
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the hyperlink */
+.qr-container a {
+    text-decoration: none;
+    color: #0071e3; /* Apple's blue color */
+    font-size: 12px;
+    word-break: break-word; /* Ensures long links wrap to the next line */
 }
