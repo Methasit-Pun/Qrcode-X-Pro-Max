@@ -61,20 +61,14 @@
 - **Backend**: Node.js, Express.js  
 - **QR Code Engine**: High-resolution QRCode package  
 
----
+
 
 ## **Join Us**  
 
 Your contributions make us better. Fork the repo, share your ideas, or submit pull requests to help refine Qrcode X Pro Max.  
 
----
+
 
 ## **License**  
 
 **MIT License** – [See details](LICENSE).  
-
----
-
-**Qrcode X Pro Max**: The ultimate QR code generator. Simplicity, elevated.  
-
---- 
